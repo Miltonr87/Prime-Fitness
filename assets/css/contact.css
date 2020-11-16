@@ -1,0 +1,280 @@
+@import url(font-awesome.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%; /* colado */
+	font: inherit; /* colado */
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    letter-spacing: 0.225em;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bootstrap-iso {
+    padding: 8rem 0 6rem 0;
+    z-index: 1;
+    text-align: center;
+    background: #2e3842;
+    padding: 6em 0 4em 0;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+.row {
+    padding: 8rem 0 6rem 0;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+ .bootstrap-iso .formden_header h2,
+        .bootstrap-iso .formden_header p,
+        .bootstrap-iso form {
+            font-family: Arial, Helvetica, sans-serif;
+            color: fff;
+        }
+    
+        .bootstrap-iso form button,
+        .bootstrap-iso form button:hover {
+            color:#ffffff !important;
+        }
+    
+        .asteriskField {
+            color: red;
+        }
+
+
+/*=========================================
+           Global Class 
+=========================================*/
+.container {
+    margin: 0 auto;
+    padding: 0 2.4rem;
+    width: 100%;
+    max-width: 122.5rem;
+    
+}
+
+/*=========================================
+          Responsive Navbar
+=========================================*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1d242a;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+
+.nav-list {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: #222222;
+    padding: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1250;
+    text-transform: uppercase;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid #ffffff;
+}
+
+.active {
+    font-weight: 700;
+    border-bottom: 3px solid #ffffff;
+}
+
+.open .nav-list {
+    transform: translateX(0);
+}
+
+.menu-toggle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger {
+    width: 2.4rem;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.7s ease-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    width: 2.4rem;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    border: none;
+}
+
+.hamburger::before {
+    transform: translateY(-8px);
+}
+
+.hamburger::after {
+    transform: translateY(8px);
+}
+/* =========================================
+        Menu Toggle Animation
+=========================================*/
+.open .hamburger {
+    background: transparent;
+}
+
+.open .hamburger::before {
+    transform-origin: (0, 0);
+    transform: rotate(45deg);
+}
+
+.open .hamburger::after {
+    transform-origin: (0, 0);
+    transform: rotate(-45deg);
+}
+
+/*=========================================
+       Footer
+=========================================*/
+footer {
+    padding: 6em 0 4em 0;
+    background-color: #1d242a;
+    text-align: center;
+}
+
+footer .icons {
+    font-size: 1.25em;
+}
+
+footer .icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+footer .icons a {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+footer .icons a:hover {
+	color: #fff;
+}
+
+footer .copyright {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
+	letter-spacing: 0.225em;
+	list-style: none;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+footer .copyright li {
+	border-left: solid 1px rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: center;
+}
+
+footer .copyright li:first-child {
+	border-left: 0;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+footer .copyright li a {
+	color: inherit;
+}
+
+footer .copyright li a:hover {
+	color: #fff;
+}
+                    
+
+/*=========================================
+       Media Queries : Tablet
+=========================================*/
+@media screen and (min-width: 768px) {
+    .nav-list {
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        padding: 0;
+        justify-content: initial;
+        flex-direction: row;
+        transform: initial;
+        transition: initial;
+    }
+    .nav-link {
+        margin-left: 4rem;
+        font-size: 1.6rem;
+        transition: all 0.1s;
+    }
+    .menu-toggle {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero-heading {
+        font-size: 2.4em;
+    }
+    .hero-description {
+        font-size: 1.1em;
+    }
+}

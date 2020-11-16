@@ -1,0 +1,536 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%; /* colado */
+	font: inherit; /* colado */
+}
+
+#section2 {
+  height: 600px;
+  background-color: yellow;
+}
+
+html {
+    font-size: 10px;
+    margin-bottom: auto;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    letter-spacing: 0.225em;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.6rem;        
+    margin: 0 0 2rem 0;
+}
+
+hr {
+    border: hidden;
+}
+
+header {
+    position: absolute;
+}
+
+
+/*=========================================
+           Global Class 
+=========================================*/
+.container {
+    margin: 0 auto;
+    padding: 0 2.4rem;
+    width: 100%;
+    max-width: 122.5rem;
+}
+
+.btn {
+    padding: 1.6rem 3.2rem;
+    border-radius: 4px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 2.4rem;
+    background-color: #ffffff;
+    color: #333333;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    transition: all 0.5s;
+}
+
+.cta-btn:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+/*=========================================
+          Responsive Navbar
+=========================================*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+
+.nav-list {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: #222222;
+    padding: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1250;
+    text-transform: uppercase;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid #ffffff;
+}
+
+.active {
+    font-weight: 700;
+    border-bottom: 3px solid #ffffff;
+}
+
+.open .nav-list {
+    transform: translateX(0);
+}
+
+.menu-toggle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger {
+    width: 2.4rem;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.7s ease-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    width: 2.4rem;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    border: none;
+}
+
+.hamburger::before {
+    transform: translateY(-8px);
+}
+
+.hamburger::after {
+    transform: translateY(8px);
+}
+/* =========================================
+        Menu Toggle Animation
+=========================================*/
+.open .hamburger {
+    background: transparent;
+}
+
+.open .hamburger::before {
+    transform-origin: (0, 0);
+    transform: rotate(45deg);
+}
+
+.open .hamburger::after {
+    transform-origin: (0, 0);
+    transform: rotate(-45deg);
+}
+/*=========================================
+    Nav Buttom
+=========================================*/
+#navbutton {
+  
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    
+    background-color: #333;
+    color: #fff;
+    padding: 8px 10px;
+    line-height: 1.2;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3), inset 0 1px rgba(255,255,255,.6);
+    border: 1px solid rgba(0,0,0,.15);
+    border-right: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+#navbuttom a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbuttom a:hover {
+  background: #eeeeee;
+  color: black;
+    transition: all .8s ease-out;
+}
+
+/*=========================================
+    Hero Section 
+=========================================*/
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../hero-bg.jpg") center no-repeat; */
+    background-size: cover;
+    text-align: center;
+
+    background: url(../gostosa2.png);
+    background-size: cover;
+}
+
+.hero-heading {
+    font-size: 3.2rem;
+    text-transform: capitalize;
+}
+
+.hero-description {
+    font-size: 1.4rem;
+    color: #eeeeee;
+    margin-top: 1.6rem;
+}
+
+/*=========================================
+       Middle
+=========================================*/
+
+.wrapper {
+        padding: 6em 0 4em 0 ;
+        text-align: center;
+        background: #2e3842;;
+        /* background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%); */
+}
+
+.wrapper.style3 {
+    padding: 3em 0;
+    color: #d3d4e4;
+}
+
+
+/*=========================================
+       Box Service and Spotlight
+==========================================*/
+
+#boxservice {
+        background: #2e3842;
+        padding: 3em 0;
+}
+
+.spotlight {
+	align-items: center;
+    display: flex;
+    padding: 1%;
+    
+}
+
+.spotlight:nth-child(1n) {
+    background-color: rgba(0, 0, 0, 0.45);
+    border: solid 4px;
+border-color: #2e3842;
+    opacity: 1; 
+    transition: 400ms;
+}
+
+.spotlight:nth-child(2n) {
+    background-color: rgba(0, 0, 0, 0.45);
+	flex-direction: row-reverse;
+}
+
+.spotlight:nth-child(3n) {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+
+		.spotlight .image {
+            opacity: 1;
+            transition: 400ms;
+            
+			order: 1;
+			border-radius: 0;
+			width: 40%;
+		}
+
+			.spotlight .image img {
+                box-shadow: 10px 10px 30px 0 #000000;
+				border-radius: 0;
+				width: 100%;
+			}
+
+		.spotlight .content {
+			padding: 2em 4em 0.1em 4em ;
+			order: 2;
+			max-width: 48em;
+			width: 60%;
+		}
+/*=========================================
+       Quality Box
+=========================================*/
+
+.qualitybox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1f;
+    align-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+     grid-gap: 20px;
+}
+
+.qualitybox li {
+    padding: 4em 4em 2em 6em;
+    position: relative; 
+    text-align: left;
+    width: 50%;
+    border-radius: 4px;
+    list-style: none;
+}
+
+.qualitybox li:nth-child(1) {
+    border-top-left-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.45);
+
+}
+
+.qualitybox li:nth-child(2) {
+    border-top-left-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.qualitybox li:nth-child(3) {
+    border-top-left-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.qualitybox li:nth-child(4) {
+    border-top-left-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.qualitybox li:nth-child(5) {
+    border-top-left-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.qualitybox li:nth-child(6) {
+    border-top-left-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/*=========================================
+       Testimonials
+=========================================*/
+
+.wrapper {
+  padding: 8rem 0 6rem 0 ;
+  z-index: 1; 
+}
+ 
+
+.inner2 {
+margin: 0 auto;
+    width: 75rem;
+    max-width: calc(100% - 6rem);
+}
+
+.wrapper inner2 p {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonials {
+    box-sizing: inherit;
+    display: flex;
+    justify-content: center;
+}
+.testimonials .content {
+    border-radius: 4px;
+    height: 100%;
+}
+
+blockquote {
+    border-left: solid 0.5rem;
+    font-style: italic;
+    margin: 0 0 2rem 0;
+    padding: 1rem 0 1rem 2rem;
+}
+
+.testimonials .content {
+    background-color:rgba(0, 0, 0, 0.45);
+    
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.testimonials .content .author .image img {
+    border-radius: 100%;
+    max-width: 33%;
+}
+
+.testimonials .content p {
+    font-size: 1.5rem;
+padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/*=========================================
+       Footer
+=========================================*/
+footer {
+    padding: 6em 0 4em 0;
+    background-color: #1d242a;
+    text-align: center;
+}
+
+footer .icons {
+    font-size: 1.25em;
+}
+
+footer .icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+footer .icons a {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+footer .icons a:hover {
+	color: #fff;
+}
+
+footer .copyright {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
+	letter-spacing: 0.225em;
+	list-style: none;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+footer .copyright li {
+	border-left: solid 1px rgba(255, 255, 255, 0.5);
+	display: flex;
+	justify-content: center;
+}
+
+footer .copyright li:first-child {
+	border-left: 0;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+footer .copyright li a {
+	color: inherit;
+}
+
+footer .copyright li a:hover {
+	color: #fff;
+}
+                    
+
+/*=========================================
+       Media Queries : Tablet
+=========================================*/
+@media screen and (min-width: 768px) {
+    .nav-list {
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        padding: 0;
+        justify-content: initial;
+        flex-direction: row;
+        transform: initial;
+        transition: initial;
+    }
+    .nav-link {
+        margin-left: 4rem;
+        font-size: 1.6rem;
+        transition: all 0.1s;
+    }
+    .menu-toggle {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero-heading {
+        font-size: 2.4em;
+    }
+    .hero-description {
+        font-size: 1.1em;
+    }
+}
