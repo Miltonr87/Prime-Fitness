@@ -10,10 +10,21 @@
         <title>
             Prime Fitness | Miltonr87
         </title>
-        <link href="/images/logo_transparent.png" rel="icon"/>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
-        <link href="assets/css/style.css" type="text/css" rel="stylesheet"/>
+        <!-- Logo -->
+            <link href="/images/logo_transparent.png" rel="icon"/>
         
+        <!-- Fonts Used-->
+            <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+        <!-- Style CSS-->
+            <link href="assets/css/style.css" type="text/css" rel="stylesheet"/>
+        <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+            <link href="assets/css/bootstrap-iso.css" type="text/css" rel="stylesheet" />
+    
+        <!--load all icons styles from Fonteawesome Kit-->
+            <script src="https://kit.fontawesome.com/3740bd1c16.js" crossorigin="anonymous"></script>
+
     </head>
 <body>
     <button onclick="topFunction()" id="navbutton" title="Go to top"> RETURN </button>
@@ -55,25 +66,28 @@
     
     <section class="hero-section">
             <div class="container">
-                <h2 class="hero-heading" id="section1">
-                    adventure will never stop
+                <h2 class="hero-heading">
+                    Your Body Fit & Strong
                 </h2>
                 <p class="hero-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-          consequatur esse nemo? Labore qui eaque quidem rem animi, nesciunt
-          corporis.
+                    Want to be healthy and have a perfect body? Prime Fitness 
+                    is the right decision for you!
                 </p>
                 <a class="btn cta-btn" href="#section2">
-                    start your journey
+                    Calculate your IBM
                 </a>
             </div>
     </section>
     
     <!-- Map Location -->
     <section id="one" class="wrapper style1 special">
-        <p> COLOCAR ICON </p>
-        <h3> Seção 1 - WHO WE ARE -</h3>
-        <p>Our establishment is located in the heart of the city! Make a visit:</p>
+        <p><svg class="bi bi-geo-alt" style width="4em" height="4em" viewBox="0 0 16 16" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /></svg> </p>
+        <h3> Where are we? </h3>
+        <p>Our establishment is located in the heart of the city of Maceió! Make a visit:</p>
+        
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15733.538243113942!2d-35.70984952005616!3d-9.64814449499396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1605298484670!5m2!1sen!2sbr"
             width="70%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -85,7 +99,7 @@
     <!-- Services -->
     <section id="boxservice" id="section3">
         <section class="spotlight">
-            <div class="image"><img src="images/galeguinha.png" alt="Photo by ŞULE MAKAROĞLU on Unsplash" /></div>
+            <div class="image"><img src="images/fitness.png" alt="Photo by ŞULE MAKAROĞLU on Unsplash" /></div>
             <div class="content">
                 <h2>FITNESS</h2>
                 <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam
@@ -93,7 +107,7 @@
             </div>
         </section>
         <section class="spotlight">
-            <div class="image"><img src="images/galego.png" alt="Photo by Anastase Maragos on Unsplash" /></div>
+            <div class="image"><img src="images/bodybuilding.png" alt="Photo by Anastase Maragos on Unsplash" /></div>
             <div class="content">
                 <h2>BODYBUILDING</h2>
                 <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam
@@ -112,47 +126,42 @@
 
     <!-- Quality Box -->
     <section id="three" class="wrapper style3 special">
-        <div class="inner">
             <ul class="qualitybox">
-                <li class="icon fa-paper-plane">
-                    <h3>Arcu accumsan</h3>
+                <li class="zone blue"> 
+                    <i class="fas fa-heartbeat fa-5x"> </i>
+                    <h2>Fitness Tips</h2>
+                    <p> Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat
+                    consequat.</p>
+                </li>
+                <li class="zone blue">
+                    <i class="fas fas fa-weight fa-5x"> </i>
+                    <h3>Diet Plan</h3>
                     <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean
                         ligula consequat consequat.</p>
                 </li>
-                <li class="icon solid fa-laptop">
-                    <h3>Ac Augue Eget</h3>
+                <li class="zone blue">
+                    <i class="fas fa-file-medical-alt fa-5x"> </i>
+                    <h3>Personal Health</h3>
                     <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean
                         ligula consequat consequat.</p>
+                
                 </li>
-                <li class="icon solid fa-code">
-                    <h3>Mus Scelerisque</h3>
+                <li class="zone blue">
+                    <i class="fas fa-running fa-5x"> </i>
+                    <h3>Prime Championship</h3>
                     <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean
                         ligula consequat consequat.</p>
-                </li>
-                <li class="icon solid fa-headphones-alt">
-                    <h3>Mauris Imperdiet</h3>
-                    <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean
-                        ligula consequat consequat.</p>
-                </li>
-                <li class="icon fa-heart">
-                    <h3>Aenean Primis</h3>
-                    <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean
-                        ligula consequat consequat.</p>
-                </li>
-                <li class="icon fa-flag">
-                    <h3>Tortor Ut</h3>
-                    <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean
-                        ligula consequat consequat.</p>
+                    
                 </li>
             </ul>
-        </div>
+        
     </section>
 
     <!-- Testimonials -->
     <section class="wrapper">
-        <div class="inner2">
+        <div class="inner">
             
-                <h2>Faucibus consequat lorem</h2>
+                <h2>What people say about us!</h2>
                 <p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis
                     commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
                     <hr>
@@ -167,7 +176,7 @@
                             <div class="image">
                                 <img src="./images/pic01.jpg" alt="" />
                             </div>
-                            <p class="credit">- <strong>Jane Doe</strong> <span>CEO - ABC Inc.</span></p>
+                            <p class="credit">- <strong>Jane Doe</strong> <span>| Client (5 Years)</span></p>
                         </div>
                     </div>
                     <div class="content">
@@ -179,7 +188,7 @@
                             <div class="image">
                                 <img src="images/pic03.jpg" alt="" />
                             </div>
-                            <p class="credit">- <strong>John Doe</strong> <span>CEO - ABC Inc.</span></p>
+                            <p class="credit">- <strong>John Doe</strong> <span> | Client (6 Years)</span></p>
                         </div>
                     </div>
                     <div class="content">
@@ -191,7 +200,7 @@
                             <div class="image">
                                 <img src="images/pic02.jpg" alt="" />
                             </div>
-                            <p class="credit">- <strong>Janet Smith</strong> <span>CEO - ABC Inc.</span></p>
+                            <p class="credit">- <strong>Janet Doe</strong> <span>| Client (7 Years)</span></p>
                         </div>
                     </div>
                 </section>
@@ -208,9 +217,9 @@
 
     
             
-    <!-- Scripts Used -->
-        <script src="assets/js/script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Aditional Scripts Used -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         
 
     </body>
@@ -218,14 +227,15 @@
     <!-- Footer -->
     <footer id="footer">
         <ul class="icons">
-            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="#" class="fab fa-twitter"> </a></li>
+            <li><a href="#" class="fab fa-facebook"> </a></li>
+            
+            <li><a href="#" class="fab fa-instagram"> </a></li>
+            <li><a href="#" class="fab fa-linkedin"> </a></li>
+            <li><a href="#" class="fab fa-envelope"> </a></li>
         </ul>
         <ul class="copyright">
-            <li>Design: Milton Rodrigues</li>
+            <li>Copyright: Milton Rodrigues</li>
         </ul>
     </footer>
 

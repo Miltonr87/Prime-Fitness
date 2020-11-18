@@ -198,13 +198,15 @@ footer {
 
 footer .icons {
     font-size: 1.25em;
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    padding-left: 44%;
+    list-style: none;
 }
 
-footer .icons {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    list-style: none;
+footer .icons a {
+	color: rgba(255, 255, 255, 0.5);
 }
 
 footer .icons a {
