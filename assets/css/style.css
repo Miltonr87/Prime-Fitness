@@ -485,8 +485,8 @@ padding-top: 10%;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
-.blue2 {
-    background: url(../cover2.png);
+.black {
+    background: url(../cover2.png); 
     background-size: cover;
     background-repeat: no-repeat;
     /*background: rgba(0, 20, 20, 98);*/
