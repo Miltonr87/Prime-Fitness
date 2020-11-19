@@ -31,40 +31,6 @@ a {
     text-decoration: none;
 }
 
-.bootstrap-iso {
-    padding: 8rem 0 6rem 0;
-    z-index: 1;
-    text-align: center;
-    background: #2e3842;
-    padding: 6em 0 4em 0;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-}
-
-.row {
-    padding: 8rem 0 6rem 0;
-    display: flex;
-    justify-content: center;
-    text-align: left;
-}
-
- .bootstrap-iso .formden_header h2,
-        .bootstrap-iso .formden_header p,
-        .bootstrap-iso form {
-            font-family: Arial, Helvetica, sans-serif;
-            color: fff;
-        }
-    
-        .bootstrap-iso form button,
-        .bootstrap-iso form button:hover {
-            color:#ffffff !important;
-        }
-    
-        .asteriskField {
-            color: red;
-        }
-
-
 /*=========================================
            Global Class 
 =========================================*/
@@ -185,6 +151,59 @@ header {
 .open .hamburger::after {
     transform-origin: (0, 0);
     transform: rotate(-45deg);
+}
+
+/*=========================================
+           Bootstrap Properties
+=========================================*/
+
+.bootstrap-iso {
+    padding: 8rem 0 6rem 0;
+    z-index: 1;
+    text-align: center;
+    background: #2e3842;
+    padding: 6em 0 4em 0;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+.row {
+    padding: 8rem 0 6rem 0;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form {
+    font-family: Arial, Helvetica, sans-serif;
+    color: fff;
+}
+    
+.bootstrap-iso form button, .bootstrap-iso form button:hover {
+    color:#ffffff !important;
+}
+    
+.asteriskField {
+    color: red;
+}
+
+.submit {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 10px;
+    line-height: 1.2;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3), inset 0 1px rgba(255,255,255,.6);
+    border: 1px solid rgba(0,0,0,.15);
+    border-right: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #0e0d0d;
+    color: #ffffff;
+    transition: all 0.5s;
 }
 
 /*=========================================

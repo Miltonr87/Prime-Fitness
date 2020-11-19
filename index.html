@@ -97,7 +97,7 @@
     </section>
 
     <!-- Services -->
-    <section id="boxservice" id="section3">
+    <section id="two" id="section3">
         <section class="spotlight">
             <div class="image"><img src="images/fitness.png" alt="Photo by ŞULE MAKAROĞLU on Unsplash" /></div>
             <div class="content">
@@ -208,14 +208,46 @@
         </div>
     </section>
 
-<!-- IMC Calculator -->
+<!-- BMI Calculator -->
 
-<div class="main" id="section2">
-    <h2>Calculadora de IMC</h2>
-    <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
-</div>
+<section class="zone2 blue2" id="section2">
+    <div>
 
-    
+        <p> Birth(year):
+            <input type="number" class="insert" name="birth" id="birth">
+        </p>
+
+        <p> Sex:
+            <input type="radio" class="insert" name="radsex" id="mal" checked>
+            <label  for="mal">Male</label>
+            <input type="radio" class="insert" name="radsex" id="fem">
+            <label for="fem">Female</label>
+
+        </p>
+
+        <p> Height(cm):
+            <input type="number" class="insert" name="height" id="height">
+        </p>
+
+        <p> Weight(kg):
+            <input type="number" class="insert" name="weight" id="weight">
+
+        </p>
+
+        <p> <input type="button" value="Verify BMI" class="verify" onclick="verify()">
+
+        </p>
+    </div>
+
+    <div id="res2"> Fill all spaces above to know the result! </div>
+    <div id="res">
+        <hr>
+    </div>
+    <div id="res3">  </div>
+</section>
+
+    <!-- Personal BMI Calculator -->
+    <script src="assets/js/bmiCalculator.js"></script>
             
     <!-- Aditional Scripts Used -->
     <script src="assets/js/script.js"></script>

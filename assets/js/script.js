@@ -5,8 +5,6 @@ menuToggle.addEventListener("click", () => {
   navbar.classList.toggle("open");
 });
 
-
-
 /*================================================
     Nav Button
 =================================================*/
