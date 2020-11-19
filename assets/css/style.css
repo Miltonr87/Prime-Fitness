@@ -486,7 +486,10 @@ padding-top: 10%;
 }
 
 .blue2 {
-    background: rgba(0, 20, 20, 98);
+    background: url(../cover2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background: rgba(0, 20, 20, 98);*/
 }
 
 .verify {
@@ -515,7 +518,6 @@ padding-top: 10%;
     border-radius: 5px 0 0 5px;
     border: 1px solid rgba(0,0,0,.15);
     border-right: 0;
-    font-size: 20px;
 }
 
 
