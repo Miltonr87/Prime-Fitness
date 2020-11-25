@@ -1,15 +1,14 @@
+
 * {
     margin: 0;
     padding: 0;
-    font-size: 100%;
-	font: inherit; 
+    font: inherit; 
 }
-
 
 html {
     height:100%;
     font-size: 10px;
-    margin-bottom: auto;
+   margin-bottom: auto;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
 }
@@ -27,7 +26,13 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3 {
+h1 {
+    font-weight: 800;
+    letter-spacing: 0.225em;
+    text-transform: uppercase;
+}
+
+h2, h3 {
     font-weight: 800;
     letter-spacing: 0.225em;
     margin: 0 0 1em 0;
@@ -59,14 +64,14 @@ header {
 }
 
 
+
 /*=========================================
            Global Class 
 =========================================*/
 .container {
     margin: 0 auto;
     padding: 0 2.4rem;
-    width: 100%;
-    max-width: 122.5rem;
+    
 }
 
 .btn {
@@ -119,13 +124,13 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 80%;
+    width: 40%;
     height: 100vh;
     background-color: #222222;
     padding: 4.4rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     z-index: 1250;
     text-transform: uppercase;
     transform: translateX(-100%);
@@ -204,11 +209,9 @@ header {
     Nav Buttom
 =========================================*/
 #navbutton {
-  
     position: fixed;
     bottom: 10%;
     right: 0;
-    
     background-color: #333;
     color: #fff;
     padding: 8px 10px;
@@ -224,7 +227,7 @@ header {
 
 
 #navbuttom a {
-  display: block;
+  display: flex;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -537,6 +540,7 @@ footer .icons {
     width: 15%;
     padding-left: 44%;
     list-style: none;
+    height: 4rem;
 }
 
 footer .icons a {
@@ -578,35 +582,124 @@ footer .copyright li a:hover {
                     
 
 /*=========================================
-       Media Queries : Tablet
+       Media Queries : Mobile / Tablet
 =========================================*/
-@media screen and (min-width: 768px) {
-    .nav-list {
-        position: initial;
-        width: initial;
-        height: initial;
-        background-color: transparent;
-        padding: 0;
-        justify-content: initial;
-        flex-direction: row;
-        transform: initial;
-        transition: initial;
+@media screen and (max-width: 768px) {
+
+    #navbutton {
+        font-size: 12px;
     }
-    .nav-link {
-        margin-left: 4rem;
-        font-size: 1.6rem;
-        transition: all 0.1s;
+
+    .spotlight:nth-child(1n) {
+        flex-direction: column;
     }
-    .menu-toggle {
-        display: none;
+
+    .spotlight:nth-child(2n) {
+        flex-direction: column;
+    }
+
+    .spotlight:nth-child(3n) {
+        flex-direction: column;
+    }
+
+    .spotlight .image {
+        width: 90%;
+    }
+
+    .qualitybox {
+        display: grid;
+        grid-template-columns: none;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 20px;
+    }
+
+    .qualitybox li {
+        padding: 3em 3em 1em 4em;
+        text-align: center;
+        width: 50%;
+        border-radius: 3px;
+        list-style: none;
+    }
+    .zone2 {
+        padding: 10px;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .insert {
+        padding: 0px 0px;
+    }
+
+    footer .icons {
+        justify-content: space-between;
+        width: 40%;
+        padding-left: 35%;
+        height: 4rem;
     }
 }
 
-@media screen and (min-width: 992px) {
-    .hero-heading {
-        font-size: 2.4em;
+@media screen and (max-width: 350px) {
+
+    html {
+        display:flex;
+        flex-direction: column;
     }
-    .hero-description {
-        font-size: 1.1em;
+
+    header {
+        width: 100%;
+    }
+
+    h1 {
+        margin: 0;
+    }
+        
+    p {
+        font-size: 1.4rem;
+    }
+
+    #navbutton {
+        display: none!important;
+    }
+
+    .menu-toggle {
+        align-items: flex-end;
+    }
+
+    .qualitybox {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 20px;
+    }
+
+    .qualitybox li {
+        padding: 1em 3em 0 3em;
+        text-align: center;
+        width: 53%;
+        border-radius: 3px;
+    }
+
+    .insert{
+        width: 22%;
+    }
+
+    .verify {
+        font-size: 10px;
+    }
+
+    .res2 {
+        font-size: 14px;
+    }
+
+    footer .icons {
+        justify-content: space-between;
+        width: 60%;
+        padding-left: 25%;
+        height: 4rem;
     }
 }
