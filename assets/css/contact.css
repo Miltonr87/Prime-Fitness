@@ -84,6 +84,7 @@ header {
     text-transform: uppercase;
     transform: translateX(-100%);
     transition: transform 0.5s;
+    font-size: 2.4rem;
 }
 
 .nav-link:hover {
