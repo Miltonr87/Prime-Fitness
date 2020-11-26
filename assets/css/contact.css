@@ -80,7 +80,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    z-index: 1250;
+    z-index: 12501;
     text-transform: uppercase;
     transform: translateX(-100%);
     transition: transform 0.5s;
