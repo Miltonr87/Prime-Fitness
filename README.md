@@ -17,4 +17,4 @@
 
 - JavaScript (DOM / Call to Actions/ Data Manipulation with Numbers and Strings)
 
-[CLICK HERE](https://miltonr87.github.io/BMI-Client-Management/)
+[CLICK HERE](https://miltonr87.github.io/Prime-Fitness/)
