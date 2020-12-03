@@ -16,3 +16,5 @@
 - CSS3 (Flexbox, Grid, Bootstrap, Others Externals) 
 
 - JavaScript (DOM / Call to Actions/ Data Manipulation with Numbers and Strings)
+
+[CLICK HERE](https://miltonr87.github.io/Prime-Fitness/)
