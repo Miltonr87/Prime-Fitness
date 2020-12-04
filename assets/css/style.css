@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    font: inherit; 
 }
 
 html {
@@ -42,7 +41,6 @@ h2, h3 {
 p {    
     margin: 0 0 2rem 0;
     text-align: center;
-    padding: 1.5rem;
 }
 
 i {
@@ -351,18 +349,18 @@ border-color: #2e3842;
 =========================================*/
 
 .qualitybox {
+    margin-left: 5%;
+    margin-right: 5%;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
     /* grid-template-rows: 1fr 1f; */
-    align-content: space-evenly;
+    align-content: center;
     justify-items: center;
-    align-items: center;
-     grid-gap: 20px;
+    grid-gap: 20px;
 }
 
 .qualitybox li {
-    padding: 4em 4em 2em 6em;
-    position: relative; 
+    padding: 2em 2em 2em 2em;
     text-align: center;
     width: 50%;
     border-radius: 4px;
@@ -611,14 +609,15 @@ footer .copyright li a:hover {
         display: grid;
         grid-template-columns: none;
         justify-items: center;
-        align-items: center;
         grid-gap: 20px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .qualitybox li {
-        padding: 3em 3em 1em 4em;
+        padding: 2em 2em 0 4rem;
         text-align: center;
-        width: 50%;
+        width: 70%;
         border-radius: 3px;
         list-style: none;
     }
@@ -643,59 +642,3 @@ footer .copyright li a:hover {
     }
 }
 
-@media screen and (min-width: 300px) {
-
-    header {
-        width: 100%;
-    }
-
-    h1 {
-        margin: 0;
-    }
-        
-    p {
-        font-size: 1.4rem;
-    }
-
-    #navbutton {
-        display: none!important;
-    }
-
-    .menu-toggle {
-        align-items: flex-end;
-    }
-
-    .qualitybox {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        grid-gap: 20px;
-    }
-
-    .qualitybox li {
-        padding: 1em 3em 0 3em;
-        text-align: center;
-        width: 53%;
-        border-radius: 3px;
-    }
-
-    .insert{
-        width: 22%;
-    }
-
-    .verify {
-        font-size: 10px;
-    }
-
-    .res2 {
-        font-size: 14px;
-    }
-
-    footer .icons {
-        justify-content: space-between;
-        width: 60%;
-        padding-left: 25%;
-        height: 4rem;
-    }
-}
