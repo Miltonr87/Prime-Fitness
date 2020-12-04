@@ -9,9 +9,11 @@ menuToggle.addEventListener("click", () => {
     Nav Button
 =================================================*/
 
-  //Get the Nav Button \\
+//Get the Nav Button \\
 const mybutton = document.getElementById("navbutton");
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -22,7 +24,7 @@ function scrollFunction() {
 }
 
 /*================================================
-    Scrolldown
+    ScrollDown
 =================================================*/
 
 // When the user clicks on the button, scroll to the top of the document
@@ -30,22 +32,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-/*
-$(document).ready(function () {
-  $("a").on('click', function (event) {
-
-    if (this.hash !== "") {
-      event.preventDefault();
-
-      const hash = this.hash;
-
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function () {
-
-        
-        window.location.hash = hash;
-      });
-    }
-  })
-});*/
