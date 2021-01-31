@@ -14,6 +14,11 @@ Made most in SPA style with Vanilla JS and Bootstrap (contact form). Prime Fitne
 
 - Clone the repo (HTTP Protocol): ```git clone https://github.com/Miltonr87/Prime-Fitness.git```
 
+### Additional CDN and tools
+- [Bootstrap 4.5](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [UnsPlash Images](https://unsplash.com/)
+
 ### Live Demo 
 
 - [LIVE DEMO HERE](https://miltonr87.github.io/Prime-Fitness/)
