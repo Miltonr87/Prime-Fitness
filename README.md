@@ -1,20 +1,24 @@
-*Technologies used in Version 2.5:*
+### Prime Fitness
 
-- HTML5
+![Screen Shot](https://github.com/Miltonr87/Prime-Fitness/blob/main/primefitness.png)
 
-- CSS3 (Flexbox, Grid, Bootstrap, Others Externals) 
+[X] Desktop version
 
-- JavaScript (DOM / Call to Actions/ Data Manipulation with Numbers and Strings) 
+[X] Mobile version
 
-- Personal BMI Calculator (Javascript Vanilla)
+### About
 
+Made most in SPA style with Vanilla JS and Bootstrap (contact form). Prime Fitness is a professional-level site that I build to train tips in Advanced CSS (Grid and Flexbox). Prime Fitness has an interesting smooth scroll control (top to bottom) and a "Personal BMI Calculator" made from scratch in Vanilla JS taken from my another project. You can visit the other repository here [Personal BMI Calculator](https://github.com/Miltonr87/Personal-BMI-Calculator).
 
-*Technologies used in Version 1.0:*
+### Getting Started
 
-- HTML5
+- Clone the repo (HTTP Protocol): ```git clone https://github.com/Miltonr87/Prime-Fitness.git```
 
-- CSS3 (Flexbox, Grid, Bootstrap, Others Externals) 
+### Live Demo 
 
-- JavaScript (DOM / Call to Actions/ Data Manipulation with Numbers and Strings)
+- [LIVE DEMO HERE](https://miltonr87.github.io/Prime-Fitness/)
 
-[CLICK HERE](https://miltonr87.github.io/Prime-Fitness/)
+#### License
+
+This project is licensed under the [MIT License](https://magno.mit-license.org/2018). Copyright © Milton Rodrigues
+
