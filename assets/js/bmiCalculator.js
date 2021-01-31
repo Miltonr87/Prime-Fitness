@@ -50,20 +50,20 @@ function verify() {
 
     if (result == 0) {
       window.alert("[ERR] Check the data and try again!");
-    } else if (result < 17) {
+    } if (result < 17) {
       /* var para = document.createElement("P"); */
       var t = document.createTextNode("Very Underweight");
-    } else if (result >= 17 || result <= 18.49) {
+    } if (result >= 17) {
       var t = document.createTextNode("Underweight");
-    } else if (result >= 18.5 || result <= 24.99) {
+    } if (result >= 18.5) {
       var t = document.createTextNode("Normal Weight");
-    } else if (result >= 25 || result <= 29.99) {
+    } if (result >= 25) {
       var t = document.createTextNode("Overweight");
-    } else if (result >= 30 || result <= 34.99) {
+    } if (result >= 30) {
       var t = document.createTextNode("Obesity I");
-    } else if (result >= 35 || result <= 39.99) {
+    } if (result >= 35) {
       var t = document.createTextNode("Obesity II (severe)");
-    } else if (result >= 40) {
+    } if (result >= 40) {
       var t = document.createTextNode("Obesity III (morbid)");
     }
     res2.innerHTML = `BMI detected <strong> ${result.toFixed(
