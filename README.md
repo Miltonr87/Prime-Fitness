@@ -8,7 +8,7 @@
 
 ### About
 
-Made most in SPA style with Vanilla JS and Bootstrap (contact form). Prime Fitness is a professional-level site that I build to train tips in Advanced CSS (Grid and Flexbox). Prime Fitness has an interesting smooth scroll control (top to bottom) and a "Personal BMI Calculator" made from scratch in Vanilla JS taken from my another project. You can visit the other repository here [Personal BMI Calculator](https://github.com/Miltonr87/Personal-BMI-Calculator).
+Made most in SPA style with Vanilla JS and Bootstrap (for contact form), Prime Fitness is a professional-level site that I build to train tips in Advanced CSS (Grid and Flexbox) with interesting smooth-scroll-control (top to bottom) and a "Personal BMI Calculator" made from scratch in Vanilla JS. You can visit the other repository here [Personal BMI Calculator](https://github.com/Miltonr87/Personal-BMI-Calculator) for more detail.
 
 ### Getting Started
 
